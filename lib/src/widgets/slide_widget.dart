@@ -58,7 +58,7 @@ class SlideWidget extends StatelessWidget {
                 image: DecorationImage(
                   image: (!isAssets)
                       ? NetworkImage(imageLink)
-                      : AssetImage(imageLink) as ImageProvider,
+                      : Image.file(File(imageLink)).image,
                   fit: imageFitMode,
                 ),
               ),
