@@ -231,7 +231,7 @@ class _FanCarouselImageSliderState extends State<FanCarouselImageSlider> {
                         ? DecorationImage(
                             image: (!widget.isAssets)
                                 ? NetworkImage(expandedImage!)
-                                : AssetImage(expandedImage!) as ImageProvider,
+                                : Image.file(expandedImage!) as ImageProvider,
                             fit: widget.expandedImageFitMode,
                           )
                         : null,
